@@ -1,5 +1,10 @@
-name: DevOps-GitHibActions
-on: push
+name: Deploy Vite Project to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   # Build Job
   build:
