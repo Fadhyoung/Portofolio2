@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import WelcomeScreen from '@/components/home/WelcomeScreen.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="w-full h-full flex flex-col">
+    <WelcomeScreen />
+  </div>
 </template>
