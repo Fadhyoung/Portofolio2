@@ -1,5 +1,7 @@
 <template>
-  <nav class="p-14 fixed top-0 left-0 w-full flex items-center justify-between bg-transparent">
+  <nav
+    class="pt-14 px-24 fixed top-0 left-0 w-full flex items-center justify-between bg-transparent"
+  >
     <!-- LEFT SECTION -->
     <div class="flex items-center gap-16">
       <Button
@@ -40,7 +42,7 @@
       />
     </div>
     <div>
-      <img src="@/assets/logo.svg" alt="Vite + Vue 3" class="w-10 h-10" />
+      <img src="/images/img_fadhli_logo.png" alt="Logo" class="w-28" />
     </div>
   </nav>
 </template>
