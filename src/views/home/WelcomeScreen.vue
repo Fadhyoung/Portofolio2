@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { AtSign } from 'lucide-vue-next'
+import { Github } from 'lucide-vue-next'
+import { Linkedin } from 'lucide-vue-next'
+</script>
+
 <template>
   <div class="w-full h-screen flex flex-row justify-center items-center">
     <!-- LEFT SIDE -->
@@ -6,13 +12,32 @@
     >
       <div class="w-full h-full absolute bottom-0 right-0 bg-gradient-dark-theme"></div>
       <div class="absolute bottom-0 p-0 m-0">
-        <img src="/images/img_person_welcomescreen.png" alt="Logo" class="w-[600px]" />
+        <img src="/images/img_person_welcomescreen.png" alt="Logo" class="w-[550px]" />
       </div>
     </div>
 
     <!-- RIGHT SIDE -->
-    <div class="w-[40%]">
-      <h3>dsaf</h3>
+    <div class="w-[40%] px-20 flex flex-col gap-20 items-start justify-center">
+      <div class="flex flex-col items-left">
+        <Typography variant="xl" weight="1000" color="primary" class="mb-4"> Hi, I am</Typography>
+        <Typography variant="4xl" weight="1000" color="primary" class="mb-4"
+          >Fadhli Nur Himawan</Typography
+        >
+        <Typography variant="xl" weight="1000" color="tertiary" class="mb-4"
+          >Front-end Developer / UI Designer</Typography
+        >
+      </div>
+      <div class="flex gap-5">
+        <Button buttonType="clicked" size="md" variant="primary" radius="md" visibleOn="all">
+          <AtSign :size="32" class="text-amber" />
+        </Button>
+        <Button buttonType="clicked" size="md" variant="primary" radius="md" visibleOn="all">
+          <Github :size="32" class="text-amber" />
+        </Button>
+        <Button buttonType="clicked" size="md" variant="primary" radius="md" visibleOn="all">
+          <Linkedin :size="32" class="text-amber" />
+        </Button>
+      </div>
     </div>
   </div>
 </template>

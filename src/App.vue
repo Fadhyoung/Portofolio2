@@ -12,7 +12,6 @@ html {
   font-size: 1rem;
 }
 body {
-  font-family: var(--font-family);
   padding: 0;
   margin: 0;
   min-height: 100%;
