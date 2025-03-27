@@ -1,0 +1,13 @@
+{
+  "home": {
+    "greeting": "Hi, I am",
+    "name": "Fadhli Nur Himawan",
+    "domain": "Front-end Developer / UI Designer"
+  },
+  "navbar": {
+    "contactMe": "contact me",
+    "skills": "Skills",
+    "experiences": "Experiences",
+    "projects": "Projects"
+  }
+}

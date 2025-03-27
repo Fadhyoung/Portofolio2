@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { AtSign } from 'lucide-vue-next'
-import { Github } from 'lucide-vue-next'
-import { Linkedin } from 'lucide-vue-next'
+import { AtSign, Github, Linkedin } from 'lucide-vue-next'
 </script>
 
 <template>
@@ -19,13 +17,15 @@ import { Linkedin } from 'lucide-vue-next'
     <!-- RIGHT SIDE -->
     <div class="w-[40%] px-20 flex flex-col gap-20 items-start justify-center">
       <div class="flex flex-col items-left">
-        <Typography variant="xl" weight="1000" color="primary" class="mb-4"> Hi, I am</Typography>
-        <Typography variant="4xl" weight="1000" color="primary" class="mb-4"
-          >Fadhli Nur Himawan</Typography
+        <Typography variant="xl" weight="1000" color="primary" class="mb-4">
+          {{ $t('home.greeting') }}</Typography
         >
-        <Typography variant="xl" weight="1000" color="tertiary" class="mb-4"
-          >Front-end Developer / UI Designer</Typography
-        >
+        <Typography variant="4xl" weight="1000" color="primary" class="mb-4">{{
+          $t('home.name')
+        }}</Typography>
+        <Typography variant="xl" weight="1000" color="tertiary" class="mb-4">{{
+          $t('home.domain')
+        }}</Typography>
       </div>
       <div class="flex gap-5">
         <Button buttonType="clicked" size="md" variant="primary" radius="md" visibleOn="all">
