@@ -4,8 +4,8 @@
   >
     <!-- LEFT SECTION -->
     <div class="flex items-center gap-16">
-      <Button
-        label="CONTACT ME"
+      <BaseButton
+        :label="$t('navbar.contactMe')"
         buttonType="solid"
         size="md"
         variant="primary"
@@ -13,8 +13,8 @@
         visibleOn="all"
         @click="handleClick"
       />
-      <Button
-        label="Skills"
+      <BaseButton
+        :label="$t('navbar.skills')"
         buttonType="ghost"
         size="md"
         variant="secondary"
@@ -22,8 +22,8 @@
         visibleOn="all"
         @click="handleClick"
       />
-      <Button
-        label="Experiences"
+      <BaseButton
+        :label="$t('navbar.experiences')"
         buttonType="ghost"
         size="md"
         variant="secondary"
@@ -31,8 +31,8 @@
         visibleOn="all"
         @click="handleClick"
       />
-      <Button
-        label="Projects"
+      <BaseButton
+        :label="$t('navbar.skills')"
         buttonType="ghost"
         size="md"
         variant="secondary"
