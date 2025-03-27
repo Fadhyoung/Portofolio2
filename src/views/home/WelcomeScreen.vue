@@ -63,6 +63,13 @@ import { Linkedin } from 'lucide-vue-next'
 }
 
 .bg-gradient-dark-theme {
-  background: linear-gradient(to top, #0d2237, transparent, #0d2237);
+  background: linear-gradient(
+    to top,
+    #0d2237,
+    rgba(13, 34, 55, 0.6),
+    transparent,
+    rgba(13, 34, 55, 0.7),
+    #0d2237
+  );
 }
 </style>

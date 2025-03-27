@@ -61,18 +61,6 @@ export default {
         this.disabled || this.isLoading ? 'opacity-50 cursor-not-allowed' : '',
       ]
     },
-    buttonTypeStyles() {
-      return {
-        solid: this.variantStyles[this.variant],
-        outline: 'border border-amber bg-transparent',
-        subtle: `${this.variantStyles[this.variant]} bg-opacity-50`,
-        ghost: 'bg-transparent',
-        link: 'bg-transparent underline p-0',
-        icon: 'p-2 rounded-full',
-        elevated: `${this.variantStyles[this.variant]} shadow-md hover:shadow-lg`,
-        clicked: `${this.variantStyles[this.variant]} border border-midBlue shadow-md hover:shadow-lg`,
-      }
-    },
     variantStyles() {
       return {
         primary: 'bg-white text-black',
@@ -80,6 +68,18 @@ export default {
         tertiary: 'bg-secondaryGreen',
         danger: 'bg-red-600',
         default: 'bg-gray-200',
+      }
+    },
+    buttonTypeStyles() {
+      return {
+        solid: this.variantStyles[this.variant],
+        outline: 'border border-amber bg-transparent',
+        subtle: `${this.variantStyles[this.variant]} bg-opacity-50`,
+        ghost: `${this.variantStyles[this.variant]} bg-transparent`,
+        link: 'bg-transparent underline p-0',
+        icon: 'p-2 rounded-full',
+        elevated: `${this.variantStyles[this.variant]} shadow-md hover:shadow-lg`,
+        clicked: `${this.variantStyles[this.variant]} border border-midBlue shadow-md hover:shadow-lg`,
       }
     },
     sizeStyles() {

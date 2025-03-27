@@ -1,39 +1,39 @@
 <template>
-  <nav class="fixed top-0 left-0 w-full flex items-center justify-between bg-white shadow-md p-4">
+  <nav class="p-14 fixed top-0 left-0 w-full flex items-center justify-between bg-transparent">
     <!-- LEFT SECTION -->
-    <div>
+    <div class="flex items-center gap-16">
       <Button
         label="CONTACT ME"
         buttonType="solid"
         size="md"
         variant="primary"
-        radius="md"
+        radius="full"
         visibleOn="all"
         @click="handleClick"
       />
       <Button
         label="Skills"
-        buttonType="solid"
+        buttonType="ghost"
         size="md"
-        variant="primary"
+        variant="secondary"
         radius="md"
         visibleOn="all"
         @click="handleClick"
       />
       <Button
         label="Experiences"
-        buttonType="solid"
+        buttonType="ghost"
         size="md"
-        variant="primary"
+        variant="secondary"
         radius="md"
         visibleOn="all"
         @click="handleClick"
       />
       <Button
         label="Projects"
-        buttonType="solid"
+        buttonType="ghost"
         size="md"
-        variant="primary"
+        variant="secondary"
         radius="md"
         visibleOn="all"
         @click="handleClick"
