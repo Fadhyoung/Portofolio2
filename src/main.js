@@ -4,8 +4,8 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import Button from './components/common/Button.vue'
-import Typography from './components/common/Typography.vue'
+import BaseButton from './components/common/BaseButton.vue'
+import BaseTypography from './components/common/BaseTypography.vue'
 
 import i18n from './i18n'
 
@@ -13,6 +13,6 @@ const app = createApp(App)
 
 app.use(router)
 app.use(i18n)
-app.component('Button', Button)
-app.component('Typography', Typography)
+app.component('BaseButton', BaseButton)
+app.component('BaseTypography', BaseTypography)
 app.mount('#app')
