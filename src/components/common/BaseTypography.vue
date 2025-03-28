@@ -55,6 +55,7 @@ export default {
         primary: 'text-darkBlue',
         secondary: 'text-[#E0E0E0]',
         tertiary: 'text-midBlue',
+        amber: 'text-amber',
       }
     },
     visibleOnClasses() {
