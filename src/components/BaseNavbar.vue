@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="pt-14 px-24 fixed top-0 left-0 w-full flex items-center justify-between bg-transparent"
+    class="pt-14 px-24 absolute top-0 left-0 w-full flex items-center justify-between bg-transparent"
   >
     <!-- LEFT SECTION -->
     <div class="flex items-center gap-16">

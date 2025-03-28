@@ -9,7 +9,7 @@ import { AtSign, Github, Linkedin } from 'lucide-vue-next'
       class="relative w-[60%] h-full flex items-center justify-center -z-10 parallelogram bg-radial-pattern-dark-theme"
     >
       <div class="w-full h-full absolute bottom-0 right-0 bg-gradient-dark-theme"></div>
-      <div class="absolute bottom-0 p-0 m-0">
+      <div class="absolute bottom-0">
         <img src="/images/img_person_welcomescreen.png" alt="Logo" class="w-[550px]" />
       </div>
     </div>

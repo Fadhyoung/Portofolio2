@@ -64,7 +64,7 @@ export default {
     variantStyles() {
       return {
         primary: 'bg-white text-black',
-        secondary: 'bg-primaryGreen text-white',
+        secondary: 'bg-darkBlue text-white',
         tertiary: 'bg-secondaryGreen',
         danger: 'bg-red-600',
         default: 'bg-gray-200',

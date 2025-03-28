@@ -9,5 +9,15 @@
     "skills": "Skills",
     "experiences": "Experiences",
     "projects": "Projects"
+  },
+  "divider": {
+    "downloadResume": "Download My Resume",
+    "portfolio1": "Portfolio1",
+    "famovie": "Famovie",
+    "projects": "Projects"
+  },
+  "skills": {
+    "title": "What i am Capable of",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales"
   }
 }
