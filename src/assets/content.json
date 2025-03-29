@@ -94,5 +94,28 @@
       "year": "2022 - Present",
       "description": "I am currently volunteering in a community organization, where I help with various events and activities."
     }
+  ],
+  "Projects": [
+    {
+      "title": "Personal Portfolio Website",
+      "type": "Web Design",
+      "poster": "https://i.postimg.cc/zBqBfMPG/Portofolio-1.png",
+      "link": "https://example.com/portfolio",
+      "description": "I created a personal portfolio website to showcase my skills and projects. The website is built using HTML, CSS, and JavaScript."
+    },
+    {
+      "title": "E-commerce Website",
+      "type": "Web Design",
+      "poster": "https://i.postimg.cc/zBqBfMPG/Portofolio-1.png",
+      "link": "https://example.com/portfolio",
+      "description": "I developed an e-commerce website for a local business, where users can browse products and make purchases online."
+    },
+    {
+      "title": "Mobile App",
+      "type": "Web Design",
+      "poster": "https://i.postimg.cc/zBqBfMPG/Portofolio-1.png",
+      "link": "https://example.com/portfolio",
+      "description": "I developed a mobile app for Android using Flutter, which allows users to track their daily tasks and activities."
+    }
   ]
 }

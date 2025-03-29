@@ -4,6 +4,7 @@ import BaseNavbar from '@/components/BaseNavbar.vue'
 import BaseDivider from './home/BaseDivider.vue'
 import BaseSkills from './home/BaseSkills.vue'
 import BaseExperiences from './home/BaseExperiences.vue'
+import BaseProjects from './home/BaseProjects.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import BaseExperiences from './home/BaseExperiences.vue'
       <BaseDivider />
       <BaseSkills />
       <BaseExperiences />
+      <BaseProjects />
     </div>
   </div>
 </template>

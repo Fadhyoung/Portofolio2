@@ -2,11 +2,16 @@
 import { ref, computed } from 'vue'
 import Content from '@/assets/content.json'
 
-const totalSection = ['Educations', 'Works', 'Organizations', 'Hobbies']
-const currentSection = ref('Educations')
+const totalSection = ['ALL', 'ui/ux', 'Web Design', 'App Design', 'Graphic Design']
+const currentSection = ref('Web Design')
 
-const dataSection = computed(() => Content[currentSection.value] ?? [])
+const dataSection = computed(() => {
+  return Content.Projects.filter(
+    (project) => currentSection.value === 'ALL' || project.type === currentSection.value,
+  )
+})
 
+console.log('dataSection', dataSection.value)
 const changePage = (section) => {
   currentSection.value = section
 }
@@ -19,6 +24,10 @@ const changePage = (section) => {
       <BaseTypography variant="3xl" weight="600" class="text-center">
         My Experiences
       </BaseTypography>
+      <BaseTypography variant="sm" class="text-center">
+        Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus.
+        Phasellus consequat urna tellus
+      </BaseTypography>
       <div class="flex gap-5">
         <BaseButton
           v-for="section in totalSection"
@@ -26,44 +35,34 @@ const changePage = (section) => {
           @click="changePage(section)"
           size="md"
           :variant="currentSection === section ? 'quaternary' : 'primary'"
+          button-type="solid"
           radius="md"
           :label="section"
         ></BaseButton>
       </div>
     </div>
 
-    <!-- BOTTOM SECTION -->
-    <div class="w-2/3 flex flex-col justify-between">
-      <div v-for="(section, index) in dataSection">
-        <div :key="index" class="w-full flex gap-5 justify-between">
-          <div class="w-1/3 py-5 flex flex-col gap-2 items-end justify-start">
-            <BaseTypography variant="xl" weight="600" color="amber">
-              {{ section.institution }}
-            </BaseTypography>
-            <BaseTypography variant="sm" weight="400">
-              {{ section.year }}
-            </BaseTypography>
-          </div>
-          <div class="w-1/3 flex flex-col items-center justify-center relative">
-            <div
-              class="timeline-line"
-              :class="{
-                first: index === 0,
-                last: index === dataSection.length - 1,
-              }"
-            ></div>
-            <div class="timeline-parent-circle">
-              <div :class="`${index % 2 === 0 ? 'bg-amber' : 'bg-darkBlue'} timeline-circle`"></div>
-            </div>
-          </div>
-          <div class="w-1/3 py-5 flex flex-col gap-2 items-start justify-end">
-            <BaseTypography variant="xl" weight="600" color="amber">
-              {{ section.title }}
-            </BaseTypography>
-            <BaseTypography variant="sm" weight="400">
-              {{ section.description }}
-            </BaseTypography>
-          </div>
+    <!-- CARD SECTION -->
+    <div class="w-full p-10 flex gap-10 justify-center">
+      <div v-for="(item, index) in dataSection" :key="index" class="flex flex-col gap-5">
+        <div
+          class="w-96 h-96 relative rounded-lg border-2 border-white overflow-hidden"
+          style="background-color: rgb(104, 104, 104, 0.2)"
+        >
+          <img
+            :src="item.poster"
+            alt="image"
+            class="absolute bottom-0 left-5 w-8/12 h-5/6 z-20 object-cover shadow-2xl"
+          />
+          <img
+            :src="item.poster"
+            alt="image"
+            class="absolute bottom-0 right-5 w-8/12 h-full object-top object-cover"
+          />
+        </div>
+        <div>
+          <BaseTypography variant="sm" color="amber">{{ item.type }}</BaseTypography>
+          <BaseTypography variant="lg">{{ item.title }}</BaseTypography>
         </div>
       </div>
     </div>
