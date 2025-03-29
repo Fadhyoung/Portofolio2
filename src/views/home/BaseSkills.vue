@@ -57,7 +57,3 @@ const changePage = (page) => {
   }
 }
 </script>
-
-<style scoped>
-/* You can add extra styles here if needed */
-</style>

@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import Content from '@/assets/content.json'
 
-const totalSection = ['ALL', 'ui/ux', 'Web Design', 'App Design', 'Graphic Design']
+const totalSection = ['ALL', 'UI/UX', 'Web Design', 'App Design', 'Graphic Design']
 const currentSection = ref('Web Design')
 
 const dataSection = computed(() => {

@@ -14,11 +14,15 @@ import BaseFooter from '@/components/BaseFooter.vue'
     <WelcomeScreen />
 
     <!-- BODY -->
-    <div class="relative w-full flex flex-col gap-16 bg-gradient-to-b from-midBlue to-white">
-      <BaseDivider />
-      <BaseSkills />
-      <BaseExperiences />
-      <BaseProjects />
+    <div class="relative w-full flex flex-col">
+      <div class="bg-midBlue">
+        <BaseDivider />
+        <BaseSkills />
+      </div>
+      <div class="py-10 space-y-10 bg-gradient-to-b from-midBlue to-white">
+        <BaseExperiences />
+        <BaseProjects />
+      </div>
     </div>
 
     <BaseFooter />
