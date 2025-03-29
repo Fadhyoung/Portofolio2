@@ -1,0 +1,44 @@
+{
+  "Skills": [
+    {
+      "title": "Web Development",
+      "description": "I have various experiences in web development, including front-end and back-end development."
+    },
+    {
+      "title": "Design",
+      "description": "I was a designer when I was a member of my campus organization. I spent more than two years in this role and created over 1,000 designs."
+    },
+    {
+      "title": "English",
+      "description": "A keen English learner, in touch with the language on a daily basis. Being a screen junkie helps me improve this skill."
+    },
+    {
+      "title": "Problem Solving",
+      "description": "I have a strong interest in problem solving, especially in programming. I have participated in several competitions and won some of them."
+    },
+    {
+      "title": "Teamwork",
+      "description": "I have experience working in teams, both in organizations and in projects. I am able to work well with others and contribute to the team's success."
+    },
+    {
+      "title": "Communication",
+      "description": "I have good communication skills, both verbal and written. I am able to convey my ideas clearly and effectively."
+    },
+    {
+      "title": "Time Management",
+      "description": "I am able to manage my time effectively and prioritize tasks. I can work under pressure and meet deadlines."
+    },
+    {
+      "title": "Adaptability",
+      "description": "I am able to adapt to new situations and learn quickly. I am open to feedback and willing to improve."
+    },
+    {
+      "title": "Creativity",
+      "description": "I have a creative mindset and can think outside the box. I enjoy brainstorming and coming up with new ideas."
+    },
+    {
+      "title": "Leadership",
+      "description": "I have experience leading teams and projects. I can motivate and inspire others to achieve common goals."
+    }
+  ]
+}
