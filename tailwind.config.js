@@ -6,7 +6,7 @@ export default {
       colors: {
         darkBlue: '#0D2237',
         midBlue: '#2E77AE',
-        amber: '#F59E0B',
+        amber: '#FF8E2B',
       },
     },
   },

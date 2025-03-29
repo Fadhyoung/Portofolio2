@@ -3,6 +3,7 @@ import WelcomeScreen from './home/WelcomeScreen.vue'
 import BaseNavbar from '@/components/BaseNavbar.vue'
 import BaseDivider from './home/BaseDivider.vue'
 import BaseSkills from './home/BaseSkills.vue'
+import BaseExperiences from './home/BaseExperiences.vue'
 </script>
 
 <template>
@@ -11,9 +12,10 @@ import BaseSkills from './home/BaseSkills.vue'
     <WelcomeScreen />
 
     <!-- BODY -->
-    <div class="relative w-full h-[5000px] flex flex-col bg-gradient-to-b from-midBlue to-white">
+    <div class="relative w-full flex flex-col gap-16 bg-gradient-to-b from-midBlue to-white">
       <BaseDivider />
       <BaseSkills />
+      <BaseExperiences />
     </div>
   </div>
 </template>

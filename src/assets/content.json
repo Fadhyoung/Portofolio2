@@ -40,5 +40,59 @@
       "title": "Leadership",
       "description": "I have experience leading teams and projects. I can motivate and inspire others to achieve common goals."
     }
+  ],
+  "Educations": [
+    {
+      "title": "Bachelor of Information Technology",
+      "institution": "University of Jember",
+      "year": "2020 - 2024",
+      "description": "I graduated with a degree in Computer Science, where I learned various programming languages and software development methodologies."
+    },
+    {
+      "title": "High School Diploma",
+      "institution": "ABC High School",
+      "year": "2020 - 2024",
+      "description": "I completed my high school education with a focus on science and mathematics."
+    },
+    {
+      "title": "Online Courses",
+      "institution": "Various Platforms",
+      "year": "2020 - 2024",
+      "description": "I have completed several online courses in web development, design, and programming languages."
+    }
+  ],
+  "Works": [
+    {
+      "title": "Web Developer Intern",
+      "institution": "XYZ Company",
+      "year": "2023 - Present",
+      "description": "I am currently working as a web developer intern, where I am involved in developing and maintaining web applications."
+    },
+    {
+      "title": "Freelance Designer",
+      "institution": "Self-employed",
+      "year": "2022 - Present",
+      "description": "I have been working as a freelance designer, creating various designs for clients."
+    },
+    {
+      "title": "Campus Organization Member",
+      "institution": "ABC Organization",
+      "year": "2020 - 2024",
+      "description": "I was a member of my campus organization, where I was involved in various activities and projects."
+    }
+  ],
+  "Organizations": [
+    {
+      "institution": "ABC Organization",
+      "title": "Member",
+      "year": "2020 - 2024",
+      "description": "I was a member of my campus organization, where I was involved in various activities and projects."
+    },
+    {
+      "institution": "XYZ Community",
+      "title": "Volunteer",
+      "year": "2022 - Present",
+      "description": "I am currently volunteering in a community organization, where I help with various events and activities."
+    }
   ]
 }

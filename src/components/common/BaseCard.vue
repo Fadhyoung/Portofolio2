@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { ArrowUpRight } from 'lucide-vue-next'
-import BaseButton from './BaseButton.vue'
-import { defineProps } from 'vue'
-
-// Define props with TypeScript
-defineProps<{
+type BaseCardProps = {
   title: string
   description: string
-}>()
+}
+
+// Define props
+const props = defineProps<BaseCardProps>()
 </script>
 
 <template>
@@ -19,12 +18,12 @@ defineProps<{
     >
       <!-- Title -->
       <div class="p-6 border-bottom">
-        <h2 class="text-lg font-semibold">{{ title }}</h2>
+        <h2 class="text-lg font-semibold">{{ props.title }}</h2>
       </div>
 
       <!-- Description -->
       <div class="p-6">
-        <p class="text-sm mt-2 opacity-80">{{ description }}</p>
+        <p class="text-sm mt-2 opacity-80">{{ props.description }}</p>
       </div>
 
       <!-- Bottom Right Button -->
