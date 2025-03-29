@@ -1,5 +1,6 @@
 <template>
   <component
+    :is="tag"
     :id="id"
     :class="[variantClasses[variant], colorClasses[color], visibleOnClasses[visibleOn], className]"
     :style="{ fontWeight: weight, ...styles }"
@@ -12,6 +13,7 @@
 import { computed } from 'vue'
 
 // Define types for props
+type TypographyTag = 'p' | 'span' | 'div' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 type TypographyVariant = '2xs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl'
 type TypographyColor = 'primary' | 'secondary' | 'tertiary' | 'amber'
 type Visibility = 'mobile-only' | 'desktop-only' | 'all'
@@ -19,6 +21,7 @@ type Visibility = 'mobile-only' | 'desktop-only' | 'all'
 // Define props with TypeScript
 const props = withDefaults(
   defineProps<{
+    tag?: TypographyTag
     variant: TypographyVariant
     color?: TypographyColor
     weight?: string
@@ -43,7 +46,7 @@ const variantClasses = computed(() => ({
   lg: 'lg:text-[20px] xs:text-[16px]',
   xl: 'lg:text-[24px] xs:text-[20px]',
   '2xl': 'lg:text-[30px] xs:text-[24px]',
-  '3xl': 'lg:text-[34px] xs:text-[24px]',
+  '3xl': 'lg:text-[40px] xs:text-[24px]',
   '4xl': 'lg:text-[60px] xs:text-[34px]',
 }))
 

@@ -3,7 +3,7 @@ import { AtSign, Github, Linkedin } from 'lucide-vue-next'
 </script>
 
 <template>
-  <div class="w-full h-screen flex flex-row justify-center items-center">
+  <div class="w-full h-screen max-h-[1000px] flex flex-row justify-center items-center">
     <!-- LEFT SIDE -->
     <div
       class="relative w-[60%] h-full flex items-center justify-center -z-10 parallelogram bg-radial-pattern-dark-theme"
