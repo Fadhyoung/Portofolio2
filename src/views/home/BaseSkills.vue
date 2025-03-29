@@ -26,7 +26,7 @@
         @click="changePage(page)"
         :class="[
           'w-3 h-3 rounded-full transition-all',
-          currentPage === page ? 'bg-amber !w-12' : 'bg-white w-6 rounded-full',
+          currentPage === page ? 'bg-amber !w-12' : 'bg-white rounded-full',
         ]"
       ></button>
     </div>
