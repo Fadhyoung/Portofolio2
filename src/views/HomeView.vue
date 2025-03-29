@@ -5,6 +5,7 @@ import BaseDivider from './home/BaseDivider.vue'
 import BaseSkills from './home/BaseSkills.vue'
 import BaseExperiences from './home/BaseExperiences.vue'
 import BaseProjects from './home/BaseProjects.vue'
+import BaseFooter from '@/components/BaseFooter.vue'
 </script>
 
 <template>
@@ -19,5 +20,7 @@ import BaseProjects from './home/BaseProjects.vue'
       <BaseExperiences />
       <BaseProjects />
     </div>
+
+    <BaseFooter />
   </div>
 </template>
