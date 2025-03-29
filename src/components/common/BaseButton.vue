@@ -47,7 +47,7 @@ type ButtonType =
   | 'elevated'
   | 'clicked'
 type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'danger' | 'default'
+type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'danger' | 'default'
 type ButtonRadius = 'none' | 'xs' | 'sm' | 'md' | 'xl' | 'full'
 type LoadingPosition = 'left' | 'right'
 type Visibility = 'all' | 'mobile-only' | 'desktop-only'
@@ -86,14 +86,15 @@ const props = withDefaults(
 const variantStyles = computed(() => ({
   primary: 'bg-white text-black',
   secondary: 'bg-darkBlue text-white',
-  tertiary: 'bg-secondaryGreen',
+  tertiary: 'bg-midBlue text-white',
+  quaternary: 'bg-amber text-white',
   danger: 'bg-red-600',
   default: 'bg-gray-200',
 }))
 
 const buttonTypeStyles = computed(() => ({
   solid: variantStyles.value[props.variant],
-  outline: 'border border-amber bg-transparent',
+  outline: `${variantStyles.value[props.variant]} border border-amber`,
   subtle: `${variantStyles.value[props.variant]} bg-opacity-50`,
   ghost: `${variantStyles.value[props.variant]} bg-transparent`,
   link: 'bg-transparent underline p-0',
@@ -112,8 +113,8 @@ const sizeStyles = computed(() => ({
 
 const radiusStyles = computed(() => ({
   none: 'rounded-none',
-  xs: 'rounded-sm',
-  sm: 'rounded',
+  xs: 'rounded-xs',
+  sm: 'rounded-sm',
   md: 'rounded-md',
   xl: 'rounded-xl',
   full: 'rounded-full',
