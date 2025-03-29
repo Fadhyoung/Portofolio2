@@ -2,7 +2,15 @@
   "home": {
     "greeting": "Hi, I am",
     "name": "Fadhli Nur Himawan",
-    "domain": "Front-end Developer / UI Designer"
+    "domain": "Front-end Developer / UI Designer",
+    "downloadResume": "Download My Resume",
+    "portfolio1": "Portfolio1",
+    "famovie": "Famovie",
+    "skillTitle": "What i am Capable of",
+    "skillDesc": "I build responsive web interfaces using Vue.js and Tailwind CSS, focusing on seamless user experiences and performance optimization.",
+    "myExperiences": "My Experiences",
+    "myProjects": "My Projects",
+    "projectDesc": "I have worked on various projects, including web applications and UI designs, showcasing my skills in front-end development and design."
   },
   "navbar": {
     "contactMe": "contact me",
@@ -10,14 +18,9 @@
     "experiences": "Experiences",
     "projects": "Projects"
   },
-  "divider": {
-    "downloadResume": "Download My Resume",
-    "portfolio1": "Portfolio1",
-    "famovie": "Famovie",
-    "projects": "Projects"
-  },
-  "skills": {
-    "title": "What i am Capable of",
-    "desc": "I build responsive web interfaces using Vue.js and Tailwind CSS, focusing on seamless user experiences and performance optimization."
+  "footer": {
+    "title": "Thank you for visitiong my portofolio website",
+    "description": "If you are interested in my works, contact me now by clicking the button below",
+    "copyright": "© 2023 Fadhli Nur Himawan. All rights reserved."
   }
 }
