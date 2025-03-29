@@ -1,6 +1,13 @@
-<script setup>
+<script setup lang="ts">
 import { ArrowUpRight } from 'lucide-vue-next'
 import BaseButton from './BaseButton.vue'
+import { defineProps } from 'vue'
+
+// Define props with TypeScript
+defineProps<{
+  title: string
+  description: string
+}>()
 </script>
 
 <template>
@@ -17,40 +24,30 @@ import BaseButton from './BaseButton.vue'
 
       <!-- Description -->
       <div class="p-6">
-        <p class="text-sm mt-2 opaci-80">{{ description }}</p>
+        <p class="text-sm mt-2 opacity-80">{{ description }}</p>
       </div>
 
-      <!-- Bottom Right Icon -->
+      <!-- Bottom Right Button -->
       <BaseButton
-        label="daf"
-        class="absolute bottom-4 right-4"
+        class="absolute bottom-4 right-4 !p-5"
         variant="secondary"
         radius="full"
-        type="solid"
-        icon
+        buttonType="solid"
         color="amber"
-      />
+      >
+        <ArrowUpRight />
+      </BaseButton>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  components: { ArrowUpRight },
-  props: {
-    title: { type: String, required: true },
-    description: { type: String, required: true },
-  },
-}
-</script>
-
 <style scoped>
 /* Clip-path to create the bottom-right cutout */
 .border-half {
-  border: 1px solid rgb(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .border-bottom {
-  border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 </style>
