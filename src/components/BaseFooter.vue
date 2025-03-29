@@ -1,27 +1,26 @@
 <template>
   <footer className="bg-darkBlue">
     <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
-      <div className="text-center">
-        <h2
-          className="text-3xl font-extrabold text-transparent
-                bg-gradient-to-r from-midBlue to-red-500 bg-clip-text 
-                sm:text-5xl"
+      <div className="flex flex-col items-center justify-center gap-4 text-center">
+        <BaseTypography
+          variant="3xl"
+          weight="900"
+          className="text-transparent bg-gradient-to-r from-midBlue to-red-500 bg-clip-text"
         >
-          Thank you for visitiong my portofolio website
-        </h2>
+          {{ $t('footer.title') }}
+        </BaseTypography>
 
-        <p className="mx-auto mt-4 max-w-sm text-white">
-          If you are interested in my works, contact me now by clicking the button below
-        </p>
+        <BaseTypography variant="md" color="secondary">
+          {{ $t('footer.description') }}
+        </BaseTypography>
 
-        <a
-          href="https://linktr.ee/FadhliNurHw"
-          target="_blank"
-          rel="noreferrer"
-          className="mt-8 inline-block rounded-full border border-sky px-12 py-3 text-sm font-medium text-midBlue hover:bg-sky hover:text-white"
-        >
-          CONTECT ME
-        </a>
+        <BaseButton
+          label="Contact Me"
+          variant="tertiary"
+          button-type="outline"
+          radius="full"
+          size="lg"
+        />
       </div>
 
       <div
@@ -30,7 +29,7 @@
         <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
           <li>
             <a href="https://github.com/Fadhyoung" className="transition hover:opacity-75">
-              2024 @ Fadhli Nur Himawan</a
+              {{ $t('footer.copyright') }}</a
             >
           </li>
         </ul>
@@ -113,14 +112,3 @@
     </div>
   </footer>
 </template>
-
-<script>
-export default {
-  methods: {
-    handleClick(event) {
-      console.log('Button clicked!', event)
-      alert('Button was clicked!')
-    },
-  },
-}
-</script>

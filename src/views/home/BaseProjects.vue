@@ -22,11 +22,10 @@ const changePage = (section) => {
     <!-- TOP SECTION -->
     <div class="flex flex-col gap-5 justify-center items-center">
       <BaseTypography variant="3xl" weight="600" class="text-center">
-        My Experiences
+        {{ $t('home.myProjects') }}
       </BaseTypography>
       <BaseTypography variant="sm" class="text-center">
-        Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus.
-        Phasellus consequat urna tellus
+        {{ $t('home.projectDesc') }}
       </BaseTypography>
       <div class="flex gap-5">
         <BaseButton

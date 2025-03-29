@@ -7,7 +7,7 @@
         <BaseTypography variant="2xl" weight="500" color="amber"> Capable of </BaseTypography>
       </div>
       <BaseTypography variant="md" class="w-[30%]" color="secondary">
-        {{ $t('skills.desc') }}
+        {{ $t('home.skillDesc') }}
       </BaseTypography>
     </div>
 
