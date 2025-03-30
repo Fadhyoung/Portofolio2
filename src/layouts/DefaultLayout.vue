@@ -1,6 +1,7 @@
 <script setup>
 import BaseNavbar from '@/components/BaseNavbar.vue'
 import BaseFooter from '@/components/BaseFooter.vue'
+import BaseModal from '../components/features/BaseModal.vue'
 </script>
 
 <template>
@@ -8,5 +9,6 @@ import BaseFooter from '@/components/BaseFooter.vue'
     <BaseNavbar />
     <router-view />
     <BaseFooter />
+    <BaseModal />
   </div>
 </template>

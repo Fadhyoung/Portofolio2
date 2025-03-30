@@ -1,11 +1,8 @@
 <script setup>
 import { useScrollStore } from '../stores/scrollStore'
+import { useBaseModalState } from '../stores/baseStore'
 
-function handleClick(event) {
-  console.log('Button clicked!', event)
-  alert('Button was clicked!')
-}
-
+const modalStore = useBaseModalState()
 const scrollStore = useScrollStore()
 </script>
 
@@ -22,7 +19,7 @@ const scrollStore = useScrollStore()
         variant="primary"
         radius="full"
         visibleOn="all"
-        @click="handleClick"
+        @click="modalStore.showModal"
       />
       <BaseButton
         :label="$t('navbar.skills')"
