@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { AtSign, Github, Linkedin } from 'lucide-vue-next'
+import { GITHUB_URL, LINKEDIN_URL, MAIL_URL } from '../../constants/otherLink'
+
+const goToLink = (link: string): void => {
+  window.open(link, '_blank')
+}
 </script>
 
 <template>
@@ -28,13 +33,32 @@ import { AtSign, Github, Linkedin } from 'lucide-vue-next'
         }}</BaseTypography>
       </div>
       <div class="flex gap-5">
-        <BaseButton buttonType="clicked" size="md" variant="primary" radius="md" visibleOn="all">
+        <BaseButton
+          buttonType="clicked"
+          size="md"
+          variant="primary"
+          radius="md"
+          visibleOn="all"
+          @click="goToLink(MAIL_URL)"
+        >
           <AtSign :size="32" class="text-amber" />
         </BaseButton>
-        <BaseButton buttonType="clicked" size="md" variant="primary" radius="md" visibleOn="all">
+        <BaseButton
+          buttonType="clicked"
+          size="md"
+          variant="primary"
+          radius="md"
+          @click="goToLink(GITHUB_URL)"
+        >
           <Github :size="32" class="text-amber" />
         </BaseButton>
-        <BaseButton buttonType="clicked" size="md" variant="primary" radius="md" visibleOn="all">
+        <BaseButton
+          buttonType="clicked"
+          size="md"
+          variant="primary"
+          radius="md"
+          @click="goToLink(LINKEDIN_URL)"
+        >
           <Linkedin :size="32" class="text-amber" />
         </BaseButton>
       </div>

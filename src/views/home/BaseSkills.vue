@@ -1,5 +1,33 @@
+<script setup>
+import { ref, computed } from 'vue'
+import Content from '@/assets/content.json'
+
+const itemPerPages = 3
+const currentPage = ref(1)
+
+const totalPages = computed(() => {
+  const totalItems = Content.Skills.length
+  return Math.ceil(totalItems / itemPerPages)
+})
+
+const paginatedSkills = computed(() => {
+  const start = (currentPage.value - 1) * itemPerPages
+  const end = start + itemPerPages
+  return Content.Skills.slice(start, end)
+})
+
+const changePage = (page) => {
+  if (page >= 1 && page <= totalPages.value) {
+    currentPage.value = page
+  }
+}
+</script>
+
 <template>
-  <div class="w-full pt-60 p-10 flex flex-col gap-5 justify-center items-center bg-transparent">
+  <div
+    class="w-full pt-60 p-10 flex flex-col gap-5 justify-center items-center bg-transparent"
+    id="skills"
+  >
     <!-- TOP TITLE -->
     <div class="w-full flex justify-around items-center">
       <div class="flex gap-2 items-center justify-center">
@@ -32,32 +60,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import { ref, computed } from 'vue'
-import Content from '@/assets/content.json'
-
-const itemPerPages = 3
-const currentPage = ref(1)
-
-const totalPages = computed(() => {
-  const totalItems = Content.Skills.length
-  return Math.ceil(totalItems / itemPerPages)
-})
-
-const paginatedSkills = computed(() => {
-  const start = (currentPage.value - 1) * itemPerPages
-  const end = start + itemPerPages
-  return Content.Skills.slice(start, end)
-})
-
-const changePage = (page) => {
-  if (page >= 1 && page <= totalPages.value) {
-    currentPage.value = page
-  }
-}
-</script>
-
-<style scoped>
-/* You can add extra styles here if needed */
-</style>

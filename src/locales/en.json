@@ -6,6 +6,7 @@
     "downloadResume": "Download My Resume",
     "portfolio1": "Portfolio1",
     "famovie": "Famovie",
+    "projects": "Projects",
     "skillTitle": "What i am Capable of",
     "skillDesc": "I build responsive web interfaces using Vue.js and Tailwind CSS, focusing on seamless user experiences and performance optimization.",
     "myExperiences": "My Experiences",
@@ -22,5 +23,13 @@
     "title": "Thank you for visitiong my portofolio website",
     "description": "If you are interested in my works, contact me now by clicking the button below",
     "copyright": "© 2023 Fadhli Nur Himawan. All rights reserved."
+  },
+  "modal": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "close": "Close",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "x": "X"
   }
 }

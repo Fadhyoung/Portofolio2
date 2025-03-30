@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import Content from '@/assets/content.json'
 
-const totalSection = ['ALL', 'ui/ux', 'Web Design', 'App Design', 'Graphic Design']
+const totalSection = ['ALL', 'UI/UX', 'Web Design', 'App Design', 'Graphic Design']
 const currentSection = ref('Web Design')
 
 const dataSection = computed(() => {
@@ -11,14 +11,13 @@ const dataSection = computed(() => {
   )
 })
 
-console.log('dataSection', dataSection.value)
 const changePage = (section) => {
   currentSection.value = section
 }
 </script>
 
 <template>
-  <div class="w-full flex flex-col gap-14 justify-center items-center">
+  <div id="projects" class="w-full flex flex-col gap-14 justify-center items-center">
     <!-- TOP SECTION -->
     <div class="flex flex-col gap-5 justify-center items-center">
       <BaseTypography variant="3xl" weight="600" class="text-center">
