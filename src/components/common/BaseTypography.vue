@@ -52,7 +52,7 @@ const variantClasses = computed(() => ({
 
 const colorClasses = computed(() => ({
   primary: 'text-darkBlue',
-  secondary: 'text-[#E0E0E0]',
+  secondary: 'text-[#fff]',
   tertiary: 'text-midBlue',
   amber: 'text-amber',
 }))

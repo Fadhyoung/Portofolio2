@@ -1,16 +1,51 @@
 {
   "Skills": [
     {
-      "title": "Web Development",
-      "description": "I have various experiences in web development, including front-end and back-end development."
+      "title": "Frontend Development",
+      "description": "I have various experiences in forntend web development. Fullstacking 5 project from all course and internship",
+      "skills": [
+        "React js",
+        "Vue js",
+        "Next js",
+        "Codeigniter",
+        "php",
+        "Javascript",
+        "Html",
+        "Css",
+        "Tailwind",
+        "Gsap"
+      ]
+    },
+    {
+      "title": "Backend Development",
+      "description": "Able To make vurious backend approach with still pay attention to security, performance and raedibility.",
+      "skills": [
+        "Java",
+        "Springboot",
+        "php",
+        "codeigniter",
+        "Python",
+        "Flask",
+        "Go",
+        "Raiden",
+        "Postman",
+        "Swagger"
+      ]
+    },
+    {
+      "title": "Database",
+      "description": "Able to desing database architecture",
+      "skills": ["Mysql", "Postgresql", "Firebase", "Supabase"]
     },
     {
       "title": "Design",
-      "description": "I was a designer when I was a member of my campus organization. I spent more than two years in this role and created over 1,000 designs."
+      "description": "I was a designer when I was a member of my campus organization. I spent more than two years in this role and created over 1,000 designs.",
+      "skills": ["Adobe Illustrator", "Figma", "Adobe Photoshop", "Canva"]
     },
     {
       "title": "English",
-      "description": "A keen English learner, in touch with the language on a daily basis. Being a screen junkie helps me improve this skill."
+      "description": "A keen English learner, in touch with the language on a daily basis. Being a screen junkie helps me improve this skill.",
+      "skills": ["Listening", "Speaking", "Reading", "Writing"]
     },
     {
       "title": "Problem Solving",
@@ -49,72 +84,112 @@
       "description": "I graduated with a degree in Computer Science, where I learned various programming languages and software development methodologies."
     },
     {
-      "title": "High School Diploma",
-      "institution": "ABC High School",
-      "year": "2020 - 2024",
-      "description": "I completed my high school education with a focus on science and mathematics."
+      "title": "Java Fullstack",
+      "institution": "Metrodata Academy",
+      "year": "2023",
+      "description": "Built fullstack web app with java spring boot technology and mysql database. Leveraging spring leaf as frontend technology"
     },
     {
-      "title": "Online Courses",
-      "institution": "Various Platforms",
-      "year": "2020 - 2024",
-      "description": "I have completed several online courses in web development, design, and programming languages."
+      "title": "AI For Jobs",
+      "institution": "Oribit Guru",
+      "year": "2024",
+      "description": "Built fullstack web app with embedding home grown learned machine learning. Live on natural language processing domain"
+    },
+    {
+      "title": "Step Two English",
+      "institution": "Daffodils English Course",
+      "year": "2024",
+      "description": "Focus enhancing my english speaking skill by taking full intensive english course at Kampung Inggris Paris"
     }
   ],
   "Works": [
     {
-      "title": "Web Developer Intern",
-      "institution": "XYZ Company",
-      "year": "2023 - Present",
-      "description": "I am currently working as a web developer intern, where I am involved in developing and maintaining web applications."
+      "title": "Designer Intern",
+      "institution": "MS Glow  Situbondo",
+      "year": "2021",
+      "description": "I was designing vurious posters and social media content for MS Glow Situbondo. I was also involved in creating designs for their marketing campaigns."
     },
     {
-      "title": "Freelance Designer",
-      "institution": "Self-employed",
-      "year": "2022 - Present",
-      "description": "I have been working as a freelance designer, creating various designs for clients."
+      "title": "Designer",
+      "institution": "HIMATIF",
+      "year": "2020 - 2022",
+      "description": "Contribute to all deployed designs and social media content for the organization. Take full responsibility as the lead project manager for the information media division."
     },
     {
-      "title": "Campus Organization Member",
-      "institution": "ABC Organization",
-      "year": "2020 - 2024",
-      "description": "I was a member of my campus organization, where I was involved in various activities and projects."
+      "title": "Full Stack Engineer",
+      "institution": "Refactory",
+      "year": "2025",
+      "description": "Contribute in developing super app. Working on vurious bug tasks and tweak improvement"
     }
   ],
   "Organizations": [
     {
-      "institution": "ABC Organization",
-      "title": "Member",
-      "year": "2020 - 2024",
-      "description": "I was a member of my campus organization, where I was involved in various activities and projects."
+      "institution": "Himpunan Mahasiswa Teknologi Informasi",
+      "title": "Staff of Information Media",
+      "year": "2020 - 2021",
+      "description": "Contribute on designing vurious content either for social media or phisic media"
     },
     {
-      "institution": "XYZ Community",
-      "title": "Volunteer",
-      "year": "2022 - Present",
-      "description": "I am currently volunteering in a community organization, where I help with various events and activities."
+      "institution": "Himpunan Mahasiswa Teknologi Informasi",
+      "title": "head Staff of Information Media",
+      "year": "2021 - 2022",
+      "description": "Responsible for content and design life in the organization"
+    }
+  ],
+  "Hobbies": [
+    {
+      "institution": "Cinephiles",
+      "title": "watching movies and series",
+      "year": "",
+      "description": "Always watch movie or series every week, help me to improve my imagination and my english"
+    },
+    {
+      "institution": "Programmer",
+      "title": "Coding",
+      "year": "",
+      "description": "Love to code, deliver value, solve problem"
+    },
+    {
+      "institution": "Hiker",
+      "title": "Hiking",
+      "year": "",
+      "description": "Have been in vurious mountains in java island"
     }
   ],
   "Projects": [
     {
       "title": "Personal Portfolio Website",
-      "type": "Web Design",
+      "type": "Web App",
       "poster": "https://i.postimg.cc/zBqBfMPG/Portofolio-1.png",
       "link": "https://example.com/portfolio",
       "description": "I created a personal portfolio website to showcase my skills and projects. The website is built using HTML, CSS, and JavaScript."
     },
     {
-      "title": "E-commerce Website",
-      "type": "Web Design",
-      "poster": "https://i.postimg.cc/zBqBfMPG/Portofolio-1.png",
-      "link": "https://example.com/portfolio",
+      "title": "ARAKIA",
+      "type": "Web App",
+      "poster": "https://i.postimg.cc/8P9jmyLM/Arakia.png",
+      "link": "https://fadhyoung.github.io/arakia/",
       "description": "I developed an e-commerce website for a local business, where users can browse products and make purchases online."
     },
     {
-      "title": "Mobile App",
-      "type": "Web Design",
-      "poster": "https://i.postimg.cc/zBqBfMPG/Portofolio-1.png",
-      "link": "https://example.com/portfolio",
+      "title": "FAMOVIE",
+      "type": "Web App",
+      "poster": "https://i.postimg.cc/mZMLGb9z/Famovie.png",
+      "link": "https://fadhyoung.github.io/FAMOVIE/",
+      "description": "I developed a mobile app for Android using Flutter, which allows users to track their daily tasks and activities."
+    },
+    {
+      "title": "Epic Game Clone",
+      "type": "Web Clone",
+      "poster": "https://i.postimg.cc/SNR36dG6/epicgame-clone.png",
+      "link": "https://fadhyoung.github.io/epicGamesStore_clone/",
+      "description": "I developed a mobile app for Android using Flutter, which allows users to track their daily tasks and activities."
+    },
+    {
+      "title": "Pahe Clone",
+      "type": "Web Clone",
+      "poster": "https://i.postimg.cc/4dXSDzHw/pahe-clone.png",
+      "link": "https://fadhyoung.github.io/pahe_clone/",
       "description": "I developed a mobile app for Android using Flutter, which allows users to track their daily tasks and activities."
     }
   ]

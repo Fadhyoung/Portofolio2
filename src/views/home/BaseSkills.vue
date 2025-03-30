@@ -42,7 +42,12 @@ const changePage = (page) => {
     <!-- CARD SECTION -->
     <div class="w-full p-10 flex gap-10 justify-center">
       <div v-for="(item, index) in paginatedSkills" :key="index">
-        <BaseCard :title="item.title" :description="item.description" class="w-80 h-96" />
+        <BaseCard
+          :title="item.title"
+          :description="item.description"
+          :skills="item.skills"
+          class="w-80 h-96"
+        />
       </div>
     </div>
 
