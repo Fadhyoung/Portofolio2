@@ -1,3 +1,14 @@
+<script setup>
+import { useScrollStore } from '../stores/scrollStore'
+
+function handleClick(event) {
+  console.log('Button clicked!', event)
+  alert('Button was clicked!')
+}
+
+const scrollStore = useScrollStore()
+</script>
+
 <template>
   <nav
     class="pt-14 px-24 absolute top-0 left-0 w-full flex items-center justify-between bg-transparent"
@@ -20,7 +31,7 @@
         variant="secondary"
         radius="md"
         visibleOn="all"
-        @click="handleClick"
+        @click="scrollStore.scrollToSection('skills')"
       />
       <BaseButton
         :label="$t('navbar.experiences')"
@@ -29,16 +40,16 @@
         variant="secondary"
         radius="md"
         visibleOn="all"
-        @click="handleClick"
+        @click="scrollStore.scrollToSection('experiences')"
       />
       <BaseButton
-        :label="$t('navbar.skills')"
+        :label="$t('navbar.projects')"
         buttonType="ghost"
         size="md"
         variant="secondary"
         radius="md"
         visibleOn="all"
-        @click="handleClick"
+        @click="scrollStore.scrollToSection('projects')"
       />
     </div>
     <div>
@@ -46,14 +57,3 @@
     </div>
   </nav>
 </template>
-
-<script>
-export default {
-  methods: {
-    handleClick(event) {
-      console.log('Button clicked!', event)
-      alert('Button was clicked!')
-    },
-  },
-}
-</script>

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useScrollStore } from '../../stores/scrollStore'
+
+const scrollStore = useScrollStore()
+</script>
+
 <template>
   <div
     class="absolute -top-10 w-full p-10 flex justify-evenly items-center gap-5 border border-amber rounded-3xl bg-darkBlue shadow-xl"
@@ -37,6 +43,7 @@
       radius="md"
       visibleOn="all"
       class="bg-midBlue text-white"
+      @click="scrollStore.scrollToSection('projects')"
     />
   </div>
 </template>
