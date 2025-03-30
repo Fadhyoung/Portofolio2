@@ -1,3 +1,5 @@
 export const MAIL_URL = 'https://gmail.com/'
 export const GITHUB_URL = 'https://github.com'
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/fadhli-nur-himawan/'
+export const FAMOVIE_URL = 'https://fadhyoung.github.io/FAMOVIE/'
+export const PORTFOLIO1_URL = 'https://fadhyoung.github.io/Portofolio1/'
