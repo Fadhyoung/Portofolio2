@@ -1,13 +1,35 @@
 {
   "home": {
-    "greeting": "Hi, I am",
+    "greeting": "Hai, saya",
     "name": "Fadhli Nur Himawan",
-    "domain": "Front-end Developer / UI Designer"
+    "domain": "Pengembang Front-end / Desainer UI",
+    "downloadResume": "Unduh Resume Saya",
+    "portfolio1": "Portofolio1",
+    "famovie": "Famovie",
+    "projects": "Proyek",
+    "skillTitle": "Apa yang Saya Kuasai",
+    "skillDesc": "Saya membangun antarmuka web responsif menggunakan Vue.js dan Tailwind CSS, dengan fokus pada pengalaman pengguna yang mulus dan optimasi performa.",
+    "myExperiences": "Pengalaman Saya",
+    "myProjects": "Proyek Saya",
+    "projectDesc": "Saya telah mengerjakan berbagai proyek, termasuk aplikasi web dan desain UI, yang menunjukkan keterampilan saya dalam pengembangan front-end dan desain."
   },
   "navbar": {
-    "contactMe": "hubungi saya",
-    "skills": "Keterampilan",
+    "contactMe": "Hubungi saya",
+    "skills": "Keahlian",
     "experiences": "Pengalaman",
-    "projects": "Projek"
+    "projects": "Proyek"
+  },
+  "footer": {
+    "title": "Terima kasih telah mengunjungi website portofolio saya",
+    "description": "Jika Anda tertarik dengan karya saya, hubungi saya sekarang dengan mengklik tombol di bawah ini",
+    "copyright": "© 2023 Fadhli Nur Himawan. Semua hak dilindungi."
+  },
+  "modal": {
+    "submit": "Kirim",
+    "cancel": "Batal",
+    "close": "Tutup",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "x": "X"
   }
 }

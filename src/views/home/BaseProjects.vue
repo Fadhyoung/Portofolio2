@@ -2,8 +2,8 @@
 import { ref, computed } from 'vue'
 import Content from '@/assets/content.json'
 
-const totalSection = ['ALL', 'UI/UX', 'Web Design', 'App Design', 'Graphic Design']
-const currentSection = ref('Web Design')
+const totalSection = ['ALL', 'UI/UX', 'Web Clone', 'Web App', 'Graphic Design']
+const currentSection = ref('ALL')
 
 const dataSection = computed(() => {
   return Content.Projects.filter(
@@ -41,7 +41,7 @@ const changePage = (section) => {
     </div>
 
     <!-- CARD SECTION -->
-    <div class="w-full p-10 flex gap-10 justify-center">
+    <div class="w-3/4 p-10 flex flex-wrap gap-10 justify-center">
       <div v-for="(item, index) in dataSection" :key="index" class="flex flex-col gap-5">
         <div
           class="w-96 h-96 relative rounded-lg border-2 border-white overflow-hidden"
@@ -50,12 +50,12 @@ const changePage = (section) => {
           <img
             :src="item.poster"
             alt="image"
-            class="absolute bottom-0 left-5 w-8/12 h-5/6 z-20 object-cover shadow-2xl"
+            class="absolute bottom-0 left-5 w-8/12 h-5/6 z-20 object-top object-cover shadow-2xl"
           />
           <img
             :src="item.poster"
             alt="image"
-            class="absolute bottom-0 right-5 w-8/12 h-full object-top object-cover"
+            class="absolute bottom-0 right-5 w-8/12 h-full object-bottom object-cover"
           />
         </div>
         <div>

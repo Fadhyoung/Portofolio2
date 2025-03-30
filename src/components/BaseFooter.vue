@@ -7,7 +7,7 @@ const baseModal = useBaseModalState()
 
 <template>
   <footer className="bg-darkBlue">
-    <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+    <div className="w-10/12 m-auto px-10 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
       <div className="flex flex-col items-center justify-center gap-4 text-center">
         <BaseTypography
           variant="3xl"
