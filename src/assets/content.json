@@ -1,16 +1,51 @@
 {
   "Skills": [
     {
-      "title": "Web Development",
-      "description": "I have various experiences in web development, including front-end and back-end development."
+      "title": "Frontend Development",
+      "description": "I have various experiences in forntend web development. Fullstacking 5 project from all course and internship",
+      "skills": [
+        "React js",
+        "Vue js",
+        "Next js",
+        "Codeigniter",
+        "php",
+        "Javascript",
+        "Html",
+        "Css",
+        "Tailwind",
+        "Gsap"
+      ]
+    },
+    {
+      "title": "Backend Development",
+      "description": "Able To make vurious backend approach with still pay attention to security, performance and raedibility.",
+      "skills": [
+        "Java",
+        "Springboot",
+        "php",
+        "codeigniter",
+        "Python",
+        "Flask",
+        "Go",
+        "Raiden",
+        "Postman",
+        "Swagger"
+      ]
+    },
+    {
+      "title": "Database",
+      "description": "Able to desing database architecture",
+      "skills": ["Mysql", "Postgresql", "Firebase", "Supabase"]
     },
     {
       "title": "Design",
-      "description": "I was a designer when I was a member of my campus organization. I spent more than two years in this role and created over 1,000 designs."
+      "description": "I was a designer when I was a member of my campus organization. I spent more than two years in this role and created over 1,000 designs.",
+      "skills": ["Adobe Illustrator", "Figma", "Adobe Photoshop", "Canva"]
     },
     {
       "title": "English",
-      "description": "A keen English learner, in touch with the language on a daily basis. Being a screen junkie helps me improve this skill."
+      "description": "A keen English learner, in touch with the language on a daily basis. Being a screen junkie helps me improve this skill.",
+      "skills": ["Listening", "Speaking", "Reading", "Writing"]
     },
     {
       "title": "Problem Solving",

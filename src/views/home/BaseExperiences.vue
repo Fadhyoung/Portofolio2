@@ -16,7 +16,7 @@ const changePage = (section) => {
   <div class="w-full flex flex-col gap-5 justify-center items-center" id="experiences">
     <!-- TOP SECTION -->
     <div class="flex flex-col gap-5 justify-center items-center">
-      <BaseTypography variant="3xl" weight="600" class="text-center">
+      <BaseTypography variant="3xl" weight="600" class="text-center" color="secondary">
         {{ $t('home.myExperiences') }}
       </BaseTypography>
       <div class="flex gap-5">
